@@ -28,22 +28,14 @@
 
     </div>
   </div>
-    <iframe id="gameFrame"></iframe>
+
+
+    
+
+
+    <iframe id="gameFrame"><embed src=""></embed></iframe>
 
     <script>
-      var serverUrl1 = "https://parcoil-assets.onrender.com";
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      const gameUrl = urlParams.get("gameurl");
-
-      if (!gameUrl) {
-        alert("Game URL not provided!");
-        window.location.href = "/"; // Redirect to homepage if game URL is missing
-      } else {
-        const embedUrl = `${serverUrl1}/${gameUrl}`;
-        document.getElementById("gameFrame").src = embedUrl;
-      }
-    
       function toggleMenu() {
       const menu = document.querySelector('.menu-content');
       menu.classList.toggle('show');
